@@ -12,5 +12,5 @@ Get your API key from [here](https://www.pushbullet.com/#settings) and put it in
 
 ## Usage
 nwd command...
-  command:  The command and all arguments to run
-  e.g. "nwd ping google.com -n 60"
+command:  The command and all arguments to run
+e.g. "nwd ping google.com -n 60"
