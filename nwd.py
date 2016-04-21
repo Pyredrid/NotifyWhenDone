@@ -7,7 +7,7 @@ import sys
 from pushbullet import Pushbullet
 from subprocess import call
 
-if sys.argv[1] == '-h' or sys.argv[1] == '--help':
+if len(sys.argv) == 1 or sys.argv[1] == '-h' or sys.argv[1] == '--help':
 	print('Notifies you via PushBullet when a command finishes')
 	print(' nwd command...')
 	print('  command:  The command and all arguments to run')
@@ -29,7 +29,7 @@ except:
 	exit(1)
 
 if settings['command_started_title'].isspace():
-	if len(sys.argv) == 1:
+	if len(sys.argv) == 2:
 		pb.push_note(settings['command_started_title'], 'Running command ' + sys.argv[1] + ' with no arguments')
 	else:
 		pb.push_note(settings['command_started_title'], 'Running command ' + sys.argv[1] + ' with arguments ' + str(sys.argv[2:]))
