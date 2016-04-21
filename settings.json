@@ -1,0 +1,6 @@
+{
+  "api_key": "put_key_here",
+  "command_started_title": "Running your Command",
+  "command_done_title": "Command Completed",
+  "command_error_title": "Command Failed"
+}
